@@ -1,0 +1,47 @@
+html{
+    background: url(./src/drummer.png) top center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+}
+
+.keys{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    position: relative;
+    top: 17.5rem;
+}
+
+.key{
+    font-size: 2rem;
+    padding: 2rem;
+    margin: 0px 1rem;
+    color: black;
+    border: 7px solid gray;
+    height: 52px;
+    width: 3rem;
+    box-sizing: border-box;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .07s ease;
+}
+
+.key span{
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
